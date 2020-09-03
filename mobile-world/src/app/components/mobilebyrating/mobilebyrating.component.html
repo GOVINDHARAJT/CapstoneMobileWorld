@@ -1,0 +1,26 @@
+<div class="gallery">
+  
+    <!--<video autoplay muted loop id="myVideo">
+      <source src="../../../assets/bg.mp4" type="video/mp4">
+    </video>-->
+    
+    
+      <mat-card *ngFor="let mobile of allmobile">
+        <mat-card-header>
+          <div mat-card-avatar><a href={{mobile.mobileSite}}><div mat-card-avatar style="background-image: url({{mobile.mobileLogourl}});"></div></a></div>
+          <mat-card-title>{{mobile.mobileModel}}</mat-card-title>
+          <mat-card-subtitle>{{mobile.mobileBrand}}</mat-card-subtitle>
+        </mat-card-header>
+    
+  
+      <img mat-card-image src='{{mobile.mobileImageurl}}'>
+               <h2>&#x20b9; {{mobile.mobilePrice}}/-</h2> 
+      <mat-card-content>
+    
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="accent" (click)="onClick(mobile.mobileId)">View</button>
+        <button mat-raised-button color="accent" (click)="submit(mobile.mobileLogourl,mobile.mobileBrand,mobile.mobileModel,mobile.mobileImageurl,mobile.mobilePrice)">Add to cart</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>

@@ -1,0 +1,107 @@
+mat-card {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #F8F8FF;
+    margin-bottom: 1px ;
+    border:2px solid green;
+  
+  }
+  img {
+    margin-top: -0.5em;
+    height: 2.2em;
+    width: 2.2em;
+  }
+  
+  .love{
+     margin-top: -0.5em;
+     height: 1em;
+     width: 1em;
+  }
+  
+  p{
+    font-size: 1em;
+    font-family: 'Quicksand',
+    sans-serif;
+    font-family: 'Zilla Slab',
+    serif;
+    letter-spacing: 1px;
+  }
+  .social_icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social_icons--link {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin: 4px;
+    color: #fff;
+    background-color: #999;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, box-shadow, background-color, z-index;
+    transition-duration: 0.2s;
+    transform: scale(1);
+    will-change: transform, contents;
+  }
+  
+  .social_icons--link-facebook:hover {
+    background-color: rgba(59, 89, 152, 1);
+  }
+  
+  .social_icons--link-twitter:hover {
+    background-color: rgba(0, 172, 237, 1);
+  }
+  
+  .social_icons--link-google_plus:hover {
+    background-color: rgba(221, 75, 57, 1);
+  }
+  
+  .social_icons--link-instagram:hover {
+    background-color: rgba(217, 49, 117, 1);
+  }
+  
+  .social_icons--link-youtube:hover {
+    background-color: rgba(187, 0, 0, 1);
+  }
+  
+  .social_icons--link,
+  .social_icons--link:hover,
+  .social_icons--link:focus {
+    text-decoration: none;
+  }
+  
+  .social_icons--link:hover,
+  .social_icons--link:focus,
+  .social_icons--link:active {
+    z-index: 900;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 9px;
+    transform: scale(1.5);
+  }
+  
+  .social_icons--icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+  }
+  
+  
+  section {
+    background-color: #2f3640;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+  }
+  

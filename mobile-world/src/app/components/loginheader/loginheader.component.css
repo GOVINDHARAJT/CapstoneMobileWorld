@@ -1,0 +1,41 @@
+.active-link{
+    background-color:#E1306c;
+    color: rgb(255, 255, 255);
+  }
+  
+  .header-section {
+    height: 2em;
+    display: flex;
+    text-align: left;
+    font-weight: 600;
+    font-size: 2em;
+    padding: 10px;
+  }
+  
+  mat-toolbar {
+    display: flex;
+  
+      background-color: #166f7a;
+      margin-left: 0px;
+      margin-top: 0px;
+      padding: 5px;
+      margin-right: 0px;
+      color: whitesmoke;
+  }
+  img {
+    width: 120px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    padding: 1px;
+    border-radius: 0;
+  }
+  span
+  {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0px;
+  }
+  
+  

@@ -1,0 +1,84 @@
+
+
+
+<div>
+    <div class="fullscreen-bg">
+    
+    </div>
+    <div class="row">
+  
+      <div class="col-md-8">
+      
+        <ngb-carousel>
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S0.png" alt="">
+  
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S1.jpg" alt="">
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S2.jpg" alt="">
+  
+          </ng-template>
+  
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S3.jpg" alt="">
+            <!--<div class="carousel-caption">
+                 <h3>And wrap after last slide.</h3>
+                 <p>This carousel uses customized default values.</p>
+               </div>-->
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S4.jpg" alt="">
+  
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S5.jpg" alt="">
+  
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S6.jpg" alt="">
+  
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S7.jpg" alt="">
+  
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="slidepic" src="../../../assets/S8.png" alt="">
+  
+          </ng-template>
+  
+        </ngb-carousel>
+  
+      </div>
+    </div>
+  
+  </div>
+  
+  
+  <div class="gallery">
+  
+    <mat-card *ngFor="let mobile of allmobile">
+      <mat-card-header>
+        <div mat-card-avatar><a href={{mobile.mobileSite}}><div mat-card-avatar style="background-image: url({{mobile.mobileLogourl}});"></div></a></div>
+        <mat-card-title>{{mobile.mobileModel}}</mat-card-title>
+        <mat-card-subtitle>{{mobile.mobileBrand}}</mat-card-subtitle>
+      </mat-card-header>
+  
+
+    <img mat-card-image src='{{mobile.mobileImageurl}}'>
+             <h2>&#x20b9; {{mobile.mobilePrice}}/-</h2> 
+    <mat-card-content>
+  
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="onClick(mobile.mobileId)">View</button>
+        <button mat-raised-button color="accent" (click)="submit(mobile.mobileLogourl,mobile.mobileBrand,mobile.mobileModel,mobile.mobileImageurl,mobile.mobilePrice)">Add to cart</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
+  
+  

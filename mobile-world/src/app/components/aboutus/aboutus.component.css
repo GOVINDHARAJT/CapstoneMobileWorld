@@ -1,0 +1,10 @@
+mat-card img
+{
+  height: 200px;
+  width: 80px;
+}
+
+mat-card{
+  display: flex;
+  justify-content: space-around;
+}

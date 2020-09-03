@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="gallery">
+    <mat-card class="card">
+    
+      <div class="uppart">
+      <mat-card-header>
+        <div mat-card-avatar><a href='{{mobile.mobileSite}}'><div mat-card-avatar style="background-image: url({{mobile.mobileLogourl}});"></div></a></div>
+        <mat-card-title>{{mobile.mobileModel}}</mat-card-title>
+        <mat-card-subtitle>{{mobile.mobileBrand}}</mat-card-subtitle>
+      </mat-card-header>
+  
+
+    <img mat-card-image src='{{mobile.mobileImageurl}}'>
+    <h1>&#x20b9; {{mobile.mobilePrice}}/-</h1> 
+        </div>
+    <mat-card-content>
+      <img class="icons8"src="https://img.icons8.com/material-sharp/24/000000/smartphone-cpu.png"/>{{mobile.mobileRAM}}
+      <img class="icons8"src="https://img.icons8.com/windows/32/000000/iphone-x.png"/>{{mobile.mobileDisplaysize}}
+      <img class="icons8"src="https://img.icons8.com/windows/32/000000/high-battery.png"/>{{mobile.mobileBattery}}<br><br>
+      <img class="icons8"src="https://img.icons8.com/windows/32/000000/save.png"/>{{mobile.mobileStorage}}
+      <img class="icons8"src="https://img.icons8.com/windows/32/000000/unsplash.png"/>{{mobile.mobileCamera}}
+      <mat-icon class="star"matBadge="{{mobile.rating}}" matBadgeOverla matBadgeColor="accent">star</mat-icon>Rating
+      <br><br>
+      
+      <h2>Description :</h2>
+      <mat-icon>wysiwyg</mat-icon>{{mobile.mobileDescription}}
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="backList()">Back to List</button>
+        <button mat-raised-button color="primary" (click)="submit(mobile.mobileLogourl,mobile.mobileBrand,mobile.mobileModel,mobile.mobileImageurl,mobile.mobilePrice)">Add to cart</button>
+        <!-- (click)="viewNextPlace()">View Next Place</button> -->
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <app-footer></app-footer>
+  
+  

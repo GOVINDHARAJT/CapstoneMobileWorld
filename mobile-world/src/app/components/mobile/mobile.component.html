@@ -1,0 +1,60 @@
+<app-header></app-header>
+
+<div class="maincontainer">
+
+
+     <button class="btn" mat-raised-button color="accent" [matMenuTriggerFor]="brand">Brand</button>
+     <button class="btn" mat-raised-button color="accent" [matMenuTriggerFor]="rating">Rating</button>
+     <button class="btn" mat-raised-button color="accent" [matMenuTriggerFor]="price">Price</button>
+     
+     
+     
+  
+  <mat-menu #brand="matMenu">
+    <button mat-menu-item color="warn" (click)="openBrand('Apple')"
+      aria-label="Show an example snack-bar">Apple</button>
+    <button mat-menu-item color="warn" (click)="openBrand('Redmi')"
+      aria-label="Show an example snack-bar">Redmi </button> 
+      <button mat-menu-item color="warn" (click)="openBrand('OnePlus')"
+      aria-label="Show an example snack-bar">OnePlus </button>
+      <button mat-menu-item color="warn" (click)="openBrand('ViVo')"
+      aria-label="Show an example snack-bar">ViVo </button>
+      <button mat-menu-item color="warn" (click)="openBrand('Samsung')"
+      aria-label="Show an example snack-bar">Samsung </button>
+      <!-- <button mat-menu-item color="warn" (click)="openBrand('Redmi')"
+      aria-label="Show an example snack-bar">Redmi </button> -->
+  </mat-menu>
+
+  <mat-menu #rating="matMenu">
+    <button mat-menu-item color="accent" (click)="openRating(1)" aria-label="Show an example snack-bar">One</button>
+    <button mat-menu-item color="accent" (click)="openRating(2)" aria-label="Show an example snack-bar">Two</button>
+    <button mat-menu-item color="accent" (click)="openRating(3)" aria-label="Show an example snack-bar">Three</button>
+    <button mat-menu-item color="accent" (click)="openRating(4)" aria-label="Show an example snack-bar">Four</button>
+    <button mat-menu-item color="accent" (click)="openRating(5)" aria-label="Show an example snack-bar">Five</button>
+  </mat-menu>
+
+  <mat-menu #price="matMenu">
+    <button mat-menu-item color="warn" (click)="openPrice(0,10000)"
+      aria-label="Show an example snack-bar">0-10,000</button>
+    <button mat-menu-item color="warn" (click)="openPrice(10000,20000)"
+      aria-label="Show an example snack-bar">10,000-20,000</button>
+    <button mat-menu-item color="warn" (click)="openPrice(20000,30000)"
+      aria-label="Show an example snack-bar">20,000-30,000</button>
+    <button mat-menu-item color="warn" (click)="openPrice(30000,40000)"
+      aria-label="Show an example snack-bar">30,000-40,000</button>
+    <button mat-menu-item color="warn" (click)="openPrice(40000,50000)"
+      aria-label="Show an example snack-bar">40,000-50,000</button>
+    <button mat-menu-item color="warn" (click)="openPrice(50000,100000)"
+      aria-label="Show an example snack-bar">50,000-100,000</button>
+    <button mat-menu-item color="warn" (click)="openPrice(100000,200000)"
+      aria-label="Show an example snack-bar">100,000-200,000</button>
+  </mat-menu>
+ 
+</div> 
+
+<div class="music-outlet">
+  <router-outlet name="mobileOutlet"></router-outlet>
+</div>
+
+  
+  <app-footer></app-footer>

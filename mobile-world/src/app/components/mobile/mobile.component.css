@@ -1,0 +1,43 @@
+.maincontainer{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-left: 50px;
+   height: 50px;
+   width: 300px;
+   font-size: 5em;
+   font-weight: 800;
+  }
+  
+  .music-buttons{
+    margin-left: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .music-outlet{
+  
+    margin-left: 60px;
+  }
+  
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  button:hover {
+    color: rgb(68, 68, 68);
+  }
+  
+  
+  img {
+    height: 25px;
+    width: 25px;
+  }
+  .btn{
+    margin-right: 30px;
+  }
+ 
